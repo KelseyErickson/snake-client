@@ -1,6 +1,5 @@
 const net = require('net');
 
-
 const connect = function() {
 
   const conn = net.createConnection({
@@ -14,6 +13,13 @@ const connect = function() {
   conn.on('data', (data) => {
 
     console.log(data);
+
+  });
+
+  conn.on('connect', () => {
+
+    console.log('Successfully connected to game server');
+    conn.write('Name: KME');
 
   });
 
