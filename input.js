@@ -39,6 +39,26 @@ const handleUserInput = (key) => {
     connection.write('Move: right')
   }
 
+  if(key === 'g'){
+    connection.write('Say: Good Job!')
+  }
+
+  if(key === 'h'){
+    connection.write('Say: How Dare You!')
+  }
+
+  if(key === 'n'){
+    connection.write('Say: That\'s Not Fair!')
+  }
+
+  if(key === 'b'){
+    connection.write('Say: Boo!')
+  }
+
+  if(key === 'i'){
+    connection.write('Say: I win!')
+  }
+
 }
 
 
