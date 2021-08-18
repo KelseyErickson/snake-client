@@ -8,18 +8,18 @@ const MOVE_RIGHT_KEY = 'd';
 
 const MESSAGES = {
 
-  g:'Say: Good Job!', 
+  1:'Say: Good Job!', 
 
-  h:'Say: How Dare You!',
+  2:'Say: How Dare You!',
   
-  n:'Say: That\'s Not Fair!',
+  3:'Say: That\'s Not Fair!',
 
-  b:'Say: Boo!',
+  4:'Say: Boo!',
  
-  i:'Say: I win!'
+  5:'Say: I win!'
  
 
-}
+};
 
 module.exports = {
 
