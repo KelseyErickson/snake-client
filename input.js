@@ -6,7 +6,6 @@ let connection;
 const setupInput = function (conn) {
   connection = conn;
  
-
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
@@ -20,34 +19,34 @@ const setupInput = function (conn) {
 }
 
 const handleUserInput = (key) => {
-
+  
   if (key === '\u0003') {
     process.exit();
   }
 
   if(key == MOVE_UP_KEY){
-    connection.write('Move: up')
+    connection.write('Move: up');
   }
 
   if(key === MOVE_DOWN_KEY){
-    connection.write('Move: down')
+    connection.write('Move: down');
   }
 
   if(key === MOVE_LEFT_KEY){
-    connection.write('Move: left')
+    connection.write('Move: left');
   }
 
   if(key === MOVE_RIGHT_KEY){
-    connection.write('Move: right')
+    connection.write('Move: right');
   }
 
   for(messageKey in MESSAGES){
-    if(message === key){
+    if(messageKey === key){
       connection.write(MESSAGES[messageKey]);
     }
   }
 
-}
+};
 
 
 module.exports.setupInput = setupInput;
