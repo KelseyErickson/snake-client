@@ -1,11 +1,17 @@
+// File to keep track of constants
+
+// Connection Information
 const IP = 'localhost';
 const PORT = 50541;
 const INITIALS = 'KME';
+
+// Movement Keys
 const MOVE_UP_KEY = 'w';
 const MOVE_DOWN_KEY = 's';
 const MOVE_LEFT_KEY = 'a';
 const MOVE_RIGHT_KEY = 'd';
 
+// Message Keys
 const MESSAGES = {
 
   1:'Say: Good Job!', 
