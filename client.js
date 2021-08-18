@@ -12,7 +12,7 @@ const connect = function() {
 
   conn.setEncoding('utf8');
 
-  //Displaying data from Server if received (in this case when idle)
+  // Displaying data from Server if received
   conn.on('data', (data) => {
 
     console.log(data);
